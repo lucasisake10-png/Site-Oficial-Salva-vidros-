@@ -23,11 +23,11 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent md:bg-gradient-to-r md:from-zinc-950 md:via-zinc-950/40 md:to-transparent"></div>
       </div>
       
-      <div className="container mx-auto px-6 relative z-10 pt-[50vh] md:pt-40 pb-12 md:pb-16">
+      <div className="container mx-auto px-6 relative z-10 pt-[45vh] md:pt-40 pb-12 md:pb-16">
         <div className="max-w-3xl mx-auto md:mx-0 flex flex-col items-center md:items-start text-center md:text-left">
           
-          {/* Badge Ajustado conforme a imagem de referência (dark com borda dourada) */}
-          <div className="inline-flex items-center gap-3 bg-zinc-950/90 border border-[#FACC15]/50 px-6 py-3 rounded-full mb-10 backdrop-blur-md animate-fade-in-up shadow-[0_0_20px_rgba(250,204,21,0.1)]">
+          {/* Badge Localização */}
+          <div className="inline-flex items-center gap-3 bg-zinc-950/90 border border-[#FACC15]/50 px-6 py-3 rounded-full mb-8 backdrop-blur-md animate-fade-in-up shadow-[0_0_20px_rgba(250,204,21,0.1)]">
             <div className="w-5 h-5 bg-[#FACC15] rounded-full flex items-center justify-center">
               <MapPin size={12} className="text-black" />
             </div>
@@ -60,22 +60,23 @@ const Hero: React.FC = () => {
             </a>
           </div>
 
-          <div className="hidden md:flex bg-black/30 backdrop-blur-xl p-4 rounded-[2rem] border border-white/5 w-fit shadow-2xl items-center gap-4 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <div className="flex -space-x-3">
-              {[1, 2, 3, 4].map((i) => (
-                <img 
-                  key={i} 
-                  src={`https://i.pravatar.cc/100?u=v${i}`} 
-                  className="w-10 h-10 rounded-full border-2 border-zinc-900 object-cover" 
-                  alt="Cliente" 
-                />
-              ))}
+          {/* Badge de Prova Social Fiel à imagem solicitada */}
+          <div className="bg-black/90 px-6 py-4 rounded-3xl border border-white/10 w-fit shadow-2xl flex flex-col gap-1.5 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            {/* Linha 1: +1000 VIDROS SALVOS */}
+            <div className="flex items-center gap-2">
+              <span className="text-[#FACC15] text-2xl font-black tracking-tighter">+1000</span>
+              <span className="text-white text-sm font-black uppercase tracking-tight">VIDROS SALVOS</span>
             </div>
-            <div className="text-left">
-              <p className="text-[10px] font-black text-white tracking-widest uppercase mb-1">+15 MIL VIDROS SALVOS</p>
+            
+            {/* Linha 2: Estrelas | SATISFAÇÃO COMPROVADA */}
+            <div className="flex items-center gap-3">
               <div className="flex gap-0.5">
-                {[1, 2, 3, 4, 5].map((s) => <Star key={s} size={12} className="text-[#FACC15] fill-[#FACC15]" />)}
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <Star key={s} size={14} className="text-[#FACC15] fill-[#FACC15]" />
+                ))}
               </div>
+              <span className="text-white/30 text-xs">|</span>
+              <span className="text-[#FACC15] text-[10px] font-black uppercase tracking-[0.15em]">SATISFAÇÃO COMPROVADA</span>
             </div>
           </div>
         </div>
