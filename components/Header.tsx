@@ -13,14 +13,14 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-zinc-950/98 backdrop-blur-md shadow-2xl py-3 border-b border-white/5' : 'bg-transparent py-6'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-zinc-950/98 backdrop-blur-md shadow-2xl py-2 border-b border-white/5' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* Logo - Tamanho aumentado conforme solicitado */}
+        {/* Logo - Tamanho aumentado agressivamente no mobile conforme solicitado */}
         <div className="flex items-center shrink-0">
           <img 
             src={logoDarkBg} 
             alt="Salva Vidros Original" 
-            className={`transition-all duration-500 w-auto object-contain ${isScrolled ? 'h-10 md:h-14' : 'h-14 md:h-24'}`}
+            className={`transition-all duration-500 w-auto object-contain ${isScrolled ? 'h-20 md:h-16' : 'h-28 md:h-32'}`}
           />
         </div>
 
