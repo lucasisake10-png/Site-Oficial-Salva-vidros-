@@ -61,10 +61,10 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Badge de Prova Social Fiel à imagem solicitada */}
-          <div className="bg-black/90 px-6 py-4 rounded-3xl border border-white/10 w-fit shadow-2xl flex flex-col gap-1.5 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            {/* Linha 1: +1000 VIDROS SALVOS */}
+          <div className="bg-black/95 px-6 py-4 rounded-3xl border border-white/10 w-fit shadow-2xl flex flex-col gap-1.5 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            {/* Linha 1: Mais de 10.000 VIDROS SALVOS */}
             <div className="flex items-center gap-2">
-              <span className="text-[#FACC15] text-2xl font-black tracking-tighter">+1000</span>
+              <span className="text-[#FACC15] text-2xl font-black tracking-tighter">Mais de 10.000</span>
               <span className="text-white text-sm font-black uppercase tracking-tight">VIDROS SALVOS</span>
             </div>
             
